@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>RESULT</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
@@ -20,34 +21,34 @@
       <tbody>
         {% for image in images %}
         <tr>
-          <th><img src="{{ image.picture.url }}" height="70" /></th>
+          <th><img src="{{ image.picture.url }}" height="70"></th>
           <td>
             <h3>
-              {{ image.first_name }}<br />
+              {{ image.first_name }}<br>
               {{ image.first_value }}%
             </h3>
           </td>
           <td>
             <h3>
-              {{ image.second_name }}<br />
+              {{ image.second_name }}<br>
               {{ image.second_value }}%
             </h3>
           </td>
           <td>
             <h3>
-              {{ image.third_name }}<br />
+              {{ image.third_name }}<br>
               {{ image.third_value }}%
             </h3>
           </td>
           <td>
             <h3>
-              {{ image.fourth_name }}<br />
+              {{ image.fourth_name }}<br>
               {{ image.fourth_value }}%
             </h3>
           </td>
           <td>
             <h3>
-              {{ image.fifth_name }}<br />
+              {{ image.fifth_name }}<br>
               {{ image.fifth_value }}%
             </h3>
           </td>
@@ -55,8 +56,8 @@
         {% endfor %}
       </tbody>
     </table>
-    <br />
+    <br>
     <a href="{% url 'flower:upload' %}">Upload more</a>
-    <br />
+    <br>
   </body>
 </html>
